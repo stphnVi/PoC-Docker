@@ -1,6 +1,8 @@
 # PoC-Docker
 -Mongo image
+
 -> sudo docker pull mongo
+
 
 -Apache image
 
@@ -15,4 +17,5 @@
 
 
 -Node image
+
 -> docker build -t <<your_dockerhub_username>>/<<image_name>> .
