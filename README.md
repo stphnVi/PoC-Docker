@@ -3,8 +3,10 @@
 -> sudo docker pull mongo
 
 -Apache image
--> docker build -t my-apache2 .
--> docker run -dit --name my-running-app -p 8080:80 my-apache2
+-> cd PoC-Docker/Presentation
+-> _**image**_sudo docker build -t **httdp:latest**  .
+-> _**contaniner**_ sudo docker run -dit --name my-running-app -p 8080:80 **httdp:latest**
+-> localhost:8080/index.html
 
 -Node image
 -> docker build -t <<your_dockerhub_username>>/<<image_name>> .
