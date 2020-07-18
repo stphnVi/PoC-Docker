@@ -1,7 +1,12 @@
 # PoC-Docker
 -Mongo image
 
--> sudo docker pull mongo
+-> cd PoC-Docker/DBServer
+
+-> _**image**_ | sudo docker build -t **geekflare_mongodb** .
+
+-> _**contaniner**_ | sudo docker run -it -v /data/db:/mongodata -p 27017:27017 --name **geekflare_mongodb** -d mongo
+
 
 
 -Apache image
@@ -17,6 +22,7 @@
 
 
 -Node image
+
 
 -> cd PoC-Docker/Logic
 
