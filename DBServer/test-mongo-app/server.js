@@ -9,7 +9,9 @@ app.get("/users", async (req, res) => {
     await user.save().then(() => console.log('User created')); res.send("User created \n");
    });
 
-const connectDb = require("./src/connection");const PORT = 3000;app.get("/users", (req, res) => {
+const connectDb = require("./src/connection");
+const PORT = 3000;
+app.get("/users", (req, res) => {
  res.send('Get users \n');
 });app.get("/user-create", (req, res) => {
  res.send('User created \n');
